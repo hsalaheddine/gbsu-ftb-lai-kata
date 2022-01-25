@@ -1,0 +1,9 @@
+<div class="container"> 
+    <form [formGroup]="convertForm" (ngSubmit)="submitNumber()" fxLayout="row" fxLayoutAlign="center center">
+        <div class="form-group">
+          <label for="numberConvert">Number to convert</label>
+          <input type="number"  class="form-control" id="numberToConvert" formControlName="numberToConvert" placeholder="inputNumber" required>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="convertForm.invalid" >Convert</button>
+   </form>
+</div>
